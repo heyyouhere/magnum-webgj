@@ -1,0 +1,97 @@
+.cyber{
+    background-color: black;
+}
+
+.cyber__container{
+    max-width: 1280px;
+    width: 100%;
+    margin:  0 auto;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.cyber__overlay-container{
+    position: relative;
+    width: 500px;
+}
+
+.cyber__video{
+    width: 100%;
+}
+
+.cyber__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Example semi-transparent black overlay */
+    z-index: 10; /* Ensures overlay is above the video */
+}
+
+.cyber__about{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.cyber__title{
+    margin: 0;
+    font-size: 20px;
+}
+
+.cyber__subtitle{
+    margin: 0;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.cyber__button{
+    border: 2px solid #baf32e;
+    background-color: transparent;
+    border-radius: 30px;
+    color: #ffffff;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 1150px){
+    .cyber__video{
+        width: 300px;
+    }
+    
+}
+
+@media screen and (max-width: 860px){
+    .cyber__container{
+        flex-direction: column;
+    }
+
+    .cyber__about{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cyber__subtitle{
+        text-align: center;
+        font-size: 15px;
+        width: 300px;
+    }
+
+    .cyber__overlay-container{
+        width: 300px;
+    }
+
+    .cyber__title{
+        font-size: 20px;
+    }
+}

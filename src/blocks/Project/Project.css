@@ -1,0 +1,170 @@
+.project{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto 80px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.project__video{
+    width: 100%;
+    height: 700px;
+    margin: auto;
+}
+
+.project__mainImg{
+    width: 100%;
+}
+
+.project__about{
+    padding-top: 45px;
+    display: flex;
+    align-items: flex-end;
+    gap: 217px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 2px solid white;
+    /* padding-bottom: 100px; */
+    background-image: url(../../img/clyksa16.gif);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100% ;
+    left: -100px;
+    top: 0;
+  
+}
+
+.project__about-container{
+    max-width: 495px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project__about-image{
+    max-width: 500px;
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
+
+.project__text{
+    text-align: left;
+}
+
+.project__about-title{
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.project__about-text{
+    font-family: 'DERZKY';
+    font-size: 18px;
+    line-height: 1.25;
+}
+
+.project__gallery{
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+}
+
+.project__gallery-row{
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+.project__gallery-image{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project__mainVideo{
+    width: 100%;
+    height: 700px;
+}
+
+.project__localVideo{
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.project__image-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.project__image{
+    object-fit: cover;
+    width: 50%;
+    height: 400px;
+}
+
+.project__overlay-container{
+    position: relative;
+    width: 100%;
+}
+
+.project__reel{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    /* border: solid #ffffff; */
+    display: block;    
+}
+
+.project__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Semi-transparent black overlay */
+    color: white; /* Text color */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+@media screen and (max-width: 1100px) {
+    .project__about{
+        gap: 80px;
+    }
+    .project__about-image{
+        width: 282px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .project__about{
+        flex-direction: column;
+        gap: 25px;
+        justify-self: center;
+        align-items: center;
+    }
+    .project__image-container{
+        flex-direction: column;
+    }
+    
+    .project__image{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .project__image-1{
+        display: none;
+    }
+     
+    .project__image-2{
+        display: none;
+    }
+}

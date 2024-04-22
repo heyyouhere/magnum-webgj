@@ -1,0 +1,94 @@
+@import url(vendor/normalize.css);
+
+@font-face {
+  font-family: 'DelaGothicOne';
+  src: url("./vendor/DelaGothicOne-Regular.woff2"), format('.woff2'),
+        url("./vendor/DelaGothicOne-Regular.woff"), format('.woff')
+}
+
+@font-face {
+  font-family: 'DERZKY';
+  src: url("./vendor/DERZKY.woff"), format('.woff'),
+}
+
+html{
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'DelaGothicOne';
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+video::-webkit-media-controls, video::-moz-media-controls, video::-o-media-controls, video::-ms-media-controls {   display: none !important; }
+
+/* .section{
+  padding-left: 20px;
+  padding-right: 20px;
+} */
+
+.text-big{
+  font-size: 25px !important;
+}
+
+.text-medium{
+  font-size: 20px !important;
+}
+
+.text-small{
+  font-size: 10px !important;
+}
+
+.text-xs{
+  font-size: 15px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .text-big{
+    font-size: 20px !important;
+  }
+  
+  .text-medium{
+    font-size: 15px !important;
+  }
+  
+  .text-small{
+    font-size: 10px !important;
+  }
+  
+  .text-xs{
+    font-size: 10px !important;
+  }
+}
+
+*::-webkit-media-controls-panel {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+/* Old shadow dom for play button */
+
+*::-webkit-media-controls-play-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+/* New shadow dom for play button */
+
+/* This one works! */
+
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+}

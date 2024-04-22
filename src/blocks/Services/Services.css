@@ -1,0 +1,159 @@
+.services{
+    padding-top: 50px;
+    margin: 0 auto;
+    background-color: black
+    /* border: solid red; */
+}
+
+.services__container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.services__item{
+    display: flex;
+    width: 50%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 550px;
+    background-position: top 60% left 50%;
+    position: relative;
+}
+
+.services__item-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.services__title{
+    color: #ffffff;
+    font-size: 30px;
+    max-width: 850px;
+    margin: 30px auto 30px;
+    /* font-family: "DERZKY"; */
+    text-transform: uppercase;
+}
+
+.services__item:hover .services__item-overlay {
+    opacity: 1;
+}
+
+.services__item-title {
+    transition: opacity 0.5s ease;
+}
+
+.services__item:hover .services__item-title {
+    opacity: 0;
+}
+.services__item1{
+    background-image: url(../../img/cube_site.png);
+}
+
+.services__item2{
+    background-image: url(../../img/section2.png);
+}
+
+.services__item3{
+    background-image: url(../../img/section3.png);
+}
+
+.services__item4{
+    background-image: url(../../img/render7.png);
+}
+
+.services__item5{
+    background-image: url(../../img/XR_site.png);
+}
+
+
+.services__item6{
+    background-image: url(../../img/code_site.png);
+}
+
+
+.services__item-title{
+    margin: auto;
+    font-size: 55px;
+}
+
+.services__circle-decor{
+    margin-bottom: 50px;
+    width: 218px;
+    animation: spin 20s infinite linear;
+    display: none;
+}
+
+.services__list{
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-family: 'DERZKY';
+    font-size: 20px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .services__item{
+        background-size: 500px;
+    }
+
+    .services__item-title{
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .services__item{
+        width: 100%;
+        background-size: 300px;
+        background-position: top 60% left 50%;
+    }
+
+    .services__item-title{
+        font-size: 25px;
+    }
+
+    .services__title{
+        font-size: 20px;
+    }
+
+    .services__circle-decor{
+        display: block;
+        margin: 20px auto 50px;
+    }
+
+    .services__list{
+        max-width: 250px;
+        font-size: 10px;
+    }
+    .services__container{
+        height: 150vh;
+    }
+
+}
