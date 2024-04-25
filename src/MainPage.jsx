@@ -4,6 +4,7 @@ import Services from './blocks/Services/Services';
 import ContactForm from './blocks/ContactForm/ContactForm';
 import Footer from './blocks/Footer/Footer';
 import Recomend from './blocks/Recomend/Recomend';
+import ThreeBackground from './blocks/ThreeBackground/ThreeBackground';
 import { CyberSecsation } from './blocks/CyberSensation/CyberSensation';
 
 
@@ -18,6 +19,7 @@ function MainPage() {
       <Recomend/>
       <CyberSecsation/>
       <ContactForm/>
+      <ThreeBackground/>
       <Footer/>
     </div>
     </>
