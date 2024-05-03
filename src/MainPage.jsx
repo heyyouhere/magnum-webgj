@@ -13,7 +13,7 @@ function MainPage() {
   return (
     <>
     <div className="main-page">
-      <Header title={'MAGNUM'}/>
+      <Header title={'Test Magnum Page'}/>
       <Main/>
       <Services/>
       <Recomend/>
