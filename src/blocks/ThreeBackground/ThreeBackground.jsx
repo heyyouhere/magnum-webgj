@@ -9,6 +9,7 @@ function ThreeBackground() {
   const three_canvas = useRef(null);
 
   useEffect(() => {
+    console.log("canvas created")
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(21.30, window.innerWidth / window.innerHeight, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer({ alpha: true, powerPreference: "high-performance", antialias: true });
