@@ -6,6 +6,7 @@ import Footer from './blocks/Footer/Footer';
 import Recomend from './blocks/Recomend/Recomend';
 import ThreeBackground from './blocks/ThreeBackground/ThreeBackground';
 import { CyberSecsation } from './blocks/CyberSensation/CyberSensation';
+//import Model from './blocks/ThreeBackground/Model';
 
 
 
@@ -19,7 +20,8 @@ function MainPage() {
       <Recomend/>
       <CyberSecsation/>
       <ContactForm/>
-      <ThreeBackground/>
+
+      <ThreeBackground />
       <Footer/>
     </div>
     </>
