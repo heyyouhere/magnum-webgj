@@ -10,7 +10,7 @@ function Main() {
             <div className='main__container'>
                 <div>
                     <img loading="lazy" className='main__title-img' src={magnumTitle} alt='magnum digital studio'/>
-                    <p className='main__subtitle text-medium'>ЭКСПЕРТНАЯ КОМПАНИЯ ПО СОЗДАНИЮ ВИДЕО И КОМПЬЮТЕРНОЙ ГРАФИКИ, АНИМАЦИИ, ВИРТУАЛЬНЫХ МИРОВ И ИННОВАЦИОННЫХ ТЕХНОЛОГИЙ</p>
+                    <p className='main__subtitle text-medium'>Это тестовый сайт, тут много всего нового</p>
                 </div>
                 {/* <div className='main__grid'>
                     <div className='main__grid-item main__grid-item1'></div>
