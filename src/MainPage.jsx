@@ -20,7 +20,6 @@ function MainPage() {
       <Recomend/>
       <CyberSecsation/>
       <ContactForm/>
-
       <ModelWrapper />
       <Footer/>
     </div>
