@@ -7,7 +7,7 @@ import Recomend from './blocks/Recomend/Recomend';
 //import ThreeBackground from './blocks/ThreeBackground/ThreeBackground';
 import { CyberSecsation } from './blocks/CyberSensation/CyberSensation';
 import Scene from './blocks/ThreeBackground/Scene';
-import Butter from './Butterfly';
+
 
 
 function MainPage() {
