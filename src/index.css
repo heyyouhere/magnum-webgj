@@ -92,3 +92,13 @@ video::-webkit-media-controls, video::-moz-media-controls, video::-o-media-contr
   display: none!important;
   -webkit-appearance: none;
 }
+
+/* Для элементов, которые точно не нужно делать интерактивными */
+.header, .main-content, .footer {
+  pointer-events: none;
+}
+
+/* Особенно аккуратно настроить элементы, которые должны быть интерактивными */
+.button, .link {
+  pointer-events: auto;
+}

@@ -19,8 +19,8 @@ import {
 import { KernelSize, BlendFunction } from 'postprocessing';
 import { proxy, useSnapshot } from 'valtio';
 import { editable as e, SheetProvider } from '@theatre/r3f';
-import InstancedModel from '/src/3dmodel';
-import stateTheatre from '/src/state.json';
+import InstancedModel from './3dmodel';
+import stateTheatre from './state.json';
 import { useLayoutEffect } from 'react';
 
 const modes = ['translate', 'rotate', 'scale'];
@@ -33,12 +33,6 @@ function Controls() {
   const scene = useThree((state) => state.scene);
   return (
     <>
-      {snap.current && (
-        <TransformControls
-          object={scene.getObjectByName(snap.current)}
-          mode={modes[snap.mode]}
-        />
-      )}
 
       <OrbitControls
         dragToLook={true}
@@ -81,7 +75,6 @@ export default function Butter() {
         />
         {/* <Sparkles count={200} scale={10} size={2} speed={0.4} opacity={0.01} /> */}
         <InstancedModel />
-        <Controls />
         <EffectComposer>
           {/* <DepthOfField target={[0, 0, 1]} focalLength={0.007} bokehScale={4} />
           <Bloom

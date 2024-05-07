@@ -6,27 +6,21 @@ import Footer from './blocks/Footer/Footer';
 import Recomend from './blocks/Recomend/Recomend';
 //import ThreeBackground from './blocks/ThreeBackground/ThreeBackground';
 import { CyberSecsation } from './blocks/CyberSensation/CyberSensation';
-//import SceneWrapper from './blocks/ThreeBackground/Scene';
+import Scene from './blocks/ThreeBackground/Scene';
 import Butter from './Butterfly';
-
-
-
-
-
-
 
 
 function MainPage() {
   return (
     <>
     <div className="main-page">
+      <Scene />
       <Header title={'Test Magnum Page'}/>
       <Main/>
       <Services/>
       <Recomend/>
       <CyberSecsation/>
       <ContactForm/>
-      <Butter />
       <Footer/>
     </div>
     </>
