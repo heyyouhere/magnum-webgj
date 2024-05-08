@@ -7,6 +7,7 @@ import Recomend from './blocks/Recomend/Recomend';
 //import ThreeBackground from './blocks/ThreeBackground/ThreeBackground';
 import { CyberSecsation } from './blocks/CyberSensation/CyberSensation';
 import Scene from './blocks/ThreeBackground/Scene';
+import Game from './blocks/ThreeBackground/Game';
 
 
 
@@ -21,6 +22,7 @@ function MainPage() {
       <Recomend/>
       <CyberSecsation/>
       <ContactForm/>
+      <Game />
       <Footer/>
     </div>
     </>
